@@ -51,7 +51,7 @@ spec:
 EOF
 ```
 
-**Step 1:** Apply Jenkins Custom Resource:
+**Step 2:** Apply Jenkins Custom Resource:
 
 ```execute
 kubectl create -f jenkins-instance.yaml -n my-jenkins-operator
@@ -91,7 +91,7 @@ jenkins-operator-8876496-xn4jv   1/1     Running   0          2m54s
 
 To access Jenkins externally, lets first update service to use NodePort:
 
-**Execute below command to use NodePort:**
+**Step 1:** Execute below command to use NodePort:
 
 ```execute
 kubectl get service jenkins-operator-http-example --output yaml -n my-jenkins-operator > /tmp/my-jenkins.yaml
@@ -105,7 +105,7 @@ Output:
 service/jenkins-operator-http-example patched
 ```
 
-**Execute below command to update NodePort to 32379:**
+**Step 2:** Execute below command to update NodePort to 32379:
 
 ```execute
 kubectl get service jenkins-operator-http-example --output yaml -n my-jenkins-operator > /tmp/my-jenkins.yaml
@@ -118,6 +118,7 @@ Output:
 ```output
 service/jenkins-operator-http-example patched
 ```
+**Step 3:** Access Jenkins Dashboard:
 
 Click on the <a href="http://##DNS.ip##:32379" target="_blank">http://##DNS.ip##:32379</a> to access Jenkins Dashboard.
 
