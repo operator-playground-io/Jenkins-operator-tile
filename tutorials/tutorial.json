@@ -8,31 +8,31 @@
          "description":" Learn how to verify Jenkins Operator Installation",
          "duration":"5 min",
          "tutorial_name":"operator-installation-verification-tutorial.md",
-         "title":"1: Jenkins Operator Installation Verification"
+         "title":"1. Jenkins Operator Installation Verification"
       },
       {
          "description":" Learn how to create Jenkins Instance",
          "duration":"5 min",
          "tutorial_name":"jenkins-instance-creation-tutorial.md",
-         "title":"2: Jenkins Instance Creation"
+         "title":"2. Jenkins Instance Creation"
       },
       {
          "description":"Learn how to update Jenkins Plugins manually",
          "duration":"5 min",
          "tutorial_name":"jenkins-plugins.md",
-         "title":"3: Jenkins Plugins Manual Updation "
+         "title":"3. Jenkins Plugins Manual Updation "
       },
       {
          "description":"Learn how to create Jenkins Pipelines",
          "duration":"15 min",
          "tutorial_name":"jenkins-pipeline.md",
-         "title":"4: Jenkins Pipelines Creation"
+         "title":"4. Jenkins Pipelines Creation"
       },
       {
          "description":"Learn how to cleanup Jenkins Operator",
          "duration":"5 min",
          "tutorial_name":"cleanup.md",
-         "title":"5: Resource Cleaning"
+         "title":"5. Resource Cleaning"
       }
       
    ],
