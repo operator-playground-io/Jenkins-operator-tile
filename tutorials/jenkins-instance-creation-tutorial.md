@@ -1,11 +1,11 @@
 ---
 title: Jenkins Instance Creation tutorial
-description: This tutorial explains how to deploy jenkins instance
+description: This tutorial explains how to deploy Jenkins instance
 ---
 
 ### Deploy Jenkins
 
-Once Jenkins Operator is up and running let’s use below example :
+After the Jenkins operator is up and running, consider the following example :
 
 **Step 1:** Create `jenkins-instance` file:
 
