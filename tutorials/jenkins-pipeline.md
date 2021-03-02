@@ -62,7 +62,7 @@ A Jenkins pipeline supports two syntaxes which support continuous delivery requi
 
 **Case 1: Scripted Pipeline (Pipeline Script) :**
 
-**Step 1**: 1.	Select ‘pipeline script’ and start typing your code. 
+**Step 1**: Select ‘pipeline script’ and start typing your code. 
 See the example script below
 
 ```
@@ -95,13 +95,13 @@ pipeline {
 }
 ```
 
-**Step 1** Click on `Apply` and `Save`. You have successfully created your first Jenkins pipeline.
+**Step 2** Click on `Apply` and `Save`. You have successfully created your first Jenkins pipeline.
 
 ![](_images/pipeline-save.png)
 
 
 
-**Declarative pipeline(Pipeline Script from SCM) :**
+**Case 2: Declarative pipeline(Pipeline Script from SCM) :**
 
 **Step 1**:  If you want a declarative pipeline then select ‘pipeline script from SCM’ and choose your SCM. In this demo you will use Git. Enter your repository URL where you have kept your Jenkisfile.
 
@@ -111,7 +111,7 @@ pipeline {
 
 ![](_images/scm.png)
 
-Finally click on `Apply` and `Save`. You have successfully created your first Jenkins pipeline.
+**Step 3:** Click on `Apply` and `Save`. You have successfully created your first Jenkins pipeline.
 
 ### Build Pipeline
 
