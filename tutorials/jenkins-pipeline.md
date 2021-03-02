@@ -21,11 +21,11 @@ Over the years, there have been multiple Jenkins pipeline releases including, Je
 
 * A pipeline functionality assists Jenkins in ensuring continuous delivery.
 * The key features of a pipeline functionality are as follows.
-o	Durable: A pipeline can survive the scheduled and unexpected reboots of your Jenkins controller.
-o	Pausable: A pipeline may eventually stop and await human intervention or approval before completing the jobs it has been built for.
-o	Versatile: A pipeline assists in real-world continuous delivery requirements, and can work in parallel with other pipelines.
-o	Efficient: A pipeline may restart from any of the recorded checkpoints.
-o	Extensible: A Pipeline plugin offers support for custom extensions to integrate with other plugins.
+	* Durable: A pipeline can survive the scheduled and unexpected reboots of your Jenkins controller.
+	* Pausable: A pipeline may eventually stop and await human intervention or approval before completing the jobs it has been built for.
+	* Versatile: A pipeline assists in real-world continuous delivery requirements, and can work in parallel with other pipelines.
+	* Efficient: A pipeline may restart from any of the recorded checkpoints.
+	* Extensible: A Pipeline plugin offers support for custom extensions to integrate with other plugins.
 
 
 ### Jenkinsfile
