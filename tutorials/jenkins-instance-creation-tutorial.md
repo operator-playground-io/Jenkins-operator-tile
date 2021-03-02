@@ -69,7 +69,7 @@ jenkins.jenkins.io/example created
 kubectl get pods -n my-jenkins-operator
 ```
 
-You will see output similar like below:
+You will find the similar output as below:
 
 ```
 NAME                             READY   STATUS              RESTARTS   AGE
@@ -77,7 +77,7 @@ jenkins-example                  0/1     ContainerCreating   0          17s
 jenkins-operator-8876496-xn4jv   1/1     Running             0          109s
 ```
 
-It may take up to a few minutes until all the resources are created and the cluster is ready for use.
+It may take a few minutes. Please wait for all resources to be created and the cluster to be available for use.
 
 ```
 NAME                             READY   STATUS    RESTARTS   AGE
@@ -85,7 +85,7 @@ jenkins-example                  1/1     Running   0          82s
 jenkins-operator-8876496-xn4jv   1/1     Running   0          2m54s
 ```
 
-**Note - Please wait till `Status` will be `Running` and `READY` should be 1/1 , and then proceed further.**
+**Note - Please wait for the `STATUS` to be `Running` with `READY` value `1/1`, then proceed.**
 
 ### Connect to Jenkins
 
