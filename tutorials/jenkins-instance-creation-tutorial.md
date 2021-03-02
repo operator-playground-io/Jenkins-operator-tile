@@ -89,9 +89,9 @@ jenkins-operator-8876496-xn4jv   1/1     Running   0          2m54s
 
 ### Connect to Jenkins
 
-To access Jenkins externally, lets first update service to use NodePort:
+To access Jenkins externally, first update the service to utilize the NodePort.
 
-**Step 1:** Execute below command to use NodePort:
+**Step 1:** Run the command below to use NodePort:
 
 ```execute
 kubectl get service jenkins-operator-http-example --output yaml -n my-jenkins-operator > /tmp/my-jenkins.yaml
@@ -105,7 +105,7 @@ Output:
 service/jenkins-operator-http-example patched
 ```
 
-**Step 2:** Execute below command to update NodePort to 32379:
+**Step 2:** Run the command below to update NodePort to 32379:
 
 ```execute
 kubectl get service jenkins-operator-http-example --output yaml -n my-jenkins-operator > /tmp/my-jenkins.yaml
@@ -120,11 +120,11 @@ service/jenkins-operator-http-example patched
 ```
 **Step 3:** Access Jenkins Dashboard:
 
-Click on the <a href="http://##DNS.ip##:32379" target="_blank">http://##DNS.ip##:32379</a> to access Jenkins Dashboard.
+Go to <a href="http://##DNS.ip##:32379" target="_blank">http://##DNS.ip##:32379</a> to access Jenkins Dashboard.
 
 ### Get Jenkins credentials
 
-Execute the below commands to store the `user` and `password`:
+**Step 1:** Execute the commands as below, to store the `Username` and `Password`:
 
 ```execute
 SECRET_NAME=jenkins-operator-credentials-example
@@ -138,7 +138,7 @@ Username=$(kubectl -n my-jenkins-operator get secret $SECRET_NAME -o 'jsonpath={
 Password=$(kubectl -n my-jenkins-operator get secret $SECRET_NAME -o 'jsonpath={.data.password}' | base64 -d)
 ```
 
-Get the credentials:
+**Step 2:** Use the following commands to get Jenkins credentials
 
 ```execute
 echo $Username
@@ -147,14 +147,14 @@ echo $Username
 ```execute
 echo $Password
 ```
-
-Now use these to login to your Jenkins Dashboard.
+Now use these credentials to login to your Jenkins Dashboard.
 
 ### Login with credentials
 
 ![](_images/jenkins-login.png)
 
-Now you will be able to create your own pipelines in Jenkins Dashboard.
+Once you log in with your Jenkins credentials, you can create your own pipelines in Jenkins Dashboard.
 
 ![](_images/dashboard.png)
 
+Here you go! You have successfully deployed a Jenkins instance.
