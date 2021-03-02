@@ -5,14 +5,28 @@ description: This tutorial explains how to create Jenkins pipelines.
 
 ### Jenkins pipeline
 
-A pipeline is a collection of jobs that brings the software from version control into the hands of the end-users by using automation tools. It is a feature used to **incorporate continuous delivery** in our software development workflow.
+* A pipeline in Jenkins (also called Jenkins Pipeline) is a collection of plugins which supports implementation and integration of continuous delivery pipelines into Jenkins.
+* A plugin represents multiple Jenkins jobs as one whole workflow in the form of a pipeline.
+* A continuous delivery pipeline refers to an automated expression of a process for getting software from version control up to the users and customers.
 
 Over the years, there have been multiple Jenkins pipeline releases including, Jenkins Build flow, Jenkins Build Pipeline plugin, Jenkins Workflow, etc.
 
-**key features of plugins**
+**key features of Pipelines**
 
-- They represent multiple Jenkins jobs as one whole workflow in the form of a pipeline.
-- What do these pipelines do? These pipelines are a **collection of Jenkins jobs** that trigger each other in a specified sequence.
+* A pipeline is a Jenkin job enabled by the Pipeline plugin and created with text scripts using pipeline DSL based on the Groovy programming language.
+* A pipeline makes use of the potential of multiple steps to perform simple, complex tasks based on the parameters you establish.
+* Once created, a pipeline can be used to construct code and organize the work required to drive applications.
+
+**Pipeline Functionality**
+
+* A pipeline functionality assists Jenkins in ensuring continuous delivery.
+* The key features of a pipeline functionality are as follows.
+o	Durable: A pipeline can survive the scheduled and unexpected reboots of your Jenkins controller.
+o	Pausable: A pipeline may eventually stop and await human intervention or approval before completing the jobs it has been built for.
+o	Versatile: A pipeline assists in real-world continuous delivery requirements, and can work in parallel with other pipelines.
+o	Efficient: A pipeline may restart from any of the recorded checkpoints.
+o	Extensible: A Pipeline plugin offers support for custom extensions to integrate with other plugins.
+
 
 ### Jenkinsfile
 
