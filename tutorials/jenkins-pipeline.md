@@ -30,17 +30,19 @@ Over the years, there have been multiple Jenkins pipeline releases including, Je
 
 ### Jenkinsfile
 
-A Jenkinsfile is a text file that stores the entire workflow as code and it can be checked into a SCM on your local system. This enables the developers to **access, edit and check the code at all times**.
+* The definition of a Jenkins Pipeline is generally stored in a text file called a ***Jenkinsfile***.
+* A Jenkinsfile saves the entire workflow as a code and it can be checked into source control.
+* A Jenkinsfile is typically written using the Groovy DSL and it can be created through a text editor or through the configuration page on the Jenkins instance.
 
-The Jenkinsfile is written using the Groovy DSL and it can be created through a text/groovy editor or through the configuration page on the Jenkins instance.
+Creating a Jenkinsfile, provides many advantages including:
+* Pipeline code review
+* Pipeline audit trail
 
-**Different types of Jenkins pipeline**
+**Syntax**
 
-The Jenkins pipeline is written based on two syntaxes, namely:
-
-1.**Declarative pipeline syntax**
-
-2.**Scripted pipeline syntax**
+A Jenkins pipeline supports two syntaxes which support continuous delivery requirements.
+* Declarative pipeline syntax
+* Scripted pipeline syntax
 
 ### Creating Jenkins pipeline
 
@@ -58,11 +60,10 @@ The Jenkins pipeline is written based on two syntaxes, namely:
 
 ![](_images/pipeline-option.png)
 
-**Scripted Pipeline (Pipeline Script) :**
+**Case 1: Scripted Pipeline (Pipeline Script) :**
 
-**Step 1**: If you want a scripted pipeline then choose ‘pipeline script’ and start typing your code.
-
-Following is an example script that you can use:
+**Step 1**: 1.	Select ‘pipeline script’ and start typing your code. 
+See the example script below
 
 ```
 #!/usr/bin/env groovy
@@ -94,7 +95,7 @@ pipeline {
 }
 ```
 
-Finally click on `Apply` and `Save`. You have successfully created your first Jenkins pipeline.
+**Step 1** Click on `Apply` and `Save`. You have successfully created your first Jenkins pipeline.
 
 ![](_images/pipeline-save.png)
 
