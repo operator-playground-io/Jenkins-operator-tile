@@ -1,13 +1,13 @@
 ---
 title: Jenkins Instance Creation tutorial
-description: This tutorial explains how to deploy Jenkins instance
+description: This tutorial explains how to deploy Jenkins instance.
 ---
 
 ### Deploy Jenkins
 
-After the Jenkins operator is up and running, consider the following example :
+After the Jenkins operator is up and running, consider the following example:
 
-**Step 1:** Create `jenkins-instance` file:
+**Step 1: Create `jenkins-instance` file.**
 
 ```execute
 cat <<'EOF' > jenkins-instance.yaml
@@ -51,7 +51,7 @@ spec:
 EOF
 ```
 
-**Step 2:** Apply Jenkins Custom Resource:
+**Step 2: Apply Jenkins Custom Resource.**
 
 ```execute
 kubectl create -f jenkins-instance.yaml -n my-jenkins-operator
@@ -63,7 +63,7 @@ Sample output:
 jenkins.jenkins.io/example created
 ```
 
-**Step 3:** Watch the Jenkins instance being created:
+**Step 3: Look at the Jenkins instance currently created.**
 
 ```execute
 kubectl get pods -n my-jenkins-operator
@@ -85,13 +85,13 @@ jenkins-example                  1/1     Running   0          82s
 jenkins-operator-8876496-xn4jv   1/1     Running   0          2m54s
 ```
 
-**Note - Please wait for the `STATUS` to be `Running` with `READY` value `1/1`, then proceed.**
+**Note - Please wait for the Status to be `Running` with `READY` value `1/1`, then proceed.**
 
 ### Connect to Jenkins
 
 To access Jenkins externally, first update the service to utilize the NodePort.
 
-**Step 1:** Run the command below to use NodePort:
+**Step 1: Run the command below to use NodePort.**
 
 ```execute
 kubectl get service jenkins-operator-http-example --output yaml -n my-jenkins-operator > /tmp/my-jenkins.yaml
@@ -105,7 +105,7 @@ Output:
 service/jenkins-operator-http-example patched
 ```
 
-**Step 2:** Run the command below to update NodePort to 32379:
+**Step 2: Run the command below to update NodePort to 32379.**
 
 ```execute
 kubectl get service jenkins-operator-http-example --output yaml -n my-jenkins-operator > /tmp/my-jenkins.yaml
@@ -118,13 +118,13 @@ Output:
 ```output
 service/jenkins-operator-http-example patched
 ```
-**Step 3:** Access Jenkins Dashboard:
+**Step 3: Access Jenkins Dashboard.**
 
-Go to <a href="http://##DNS.ip##:32379" target="_blank">http://##DNS.ip##:32379</a> to access Jenkins Dashboard.
+Go to <a href="http://##DNS.ip##:32379" target="_blank">http://##DNS.ip##:32379</a> to access the Jenkins Dashboard.
 
 ### Get Jenkins credentials
 
-**Step 1:** Execute the commands as below, to store the `Username` and `Password`:
+**Step 1: Execute the commands as below, to store the `Username` and `Password`.**
 
 ```execute
 SECRET_NAME=jenkins-operator-credentials-example
@@ -138,7 +138,7 @@ Username=$(kubectl -n my-jenkins-operator get secret $SECRET_NAME -o 'jsonpath={
 Password=$(kubectl -n my-jenkins-operator get secret $SECRET_NAME -o 'jsonpath={.data.password}' | base64 -d)
 ```
 
-**Step 2:** Use the following commands to get Jenkins credentials
+**Step 2: Use the following commands to get Jenkins credentials.**
 
 ```execute
 echo $Username
