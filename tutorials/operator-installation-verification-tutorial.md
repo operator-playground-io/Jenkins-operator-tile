@@ -26,7 +26,7 @@ jenkins-operator.v0.3.0   Jenkins Operator   0.3.0     jenkins-operator.v0.2.2  
 kubectl get pods -n my-jenkins-operator
 ```
 
-You should see a Pod beginning with 'Jenkins-operator' with Ready value '1/1' and Status 'Running' like the output as below.
+You should see a Pod beginning with 'Jenkins-operator' with Ready value `1/1` and Status `Running` like the output as below.
 
 ```output
 NAME                             READY   STATUS    RESTARTS   AGE

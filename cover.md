@@ -33,7 +33,7 @@ The Jenkins Operator design incorporates the following concepts:
 
 ![](_images/jenkins-workflow.png)
 
-**Base** reconciliation phase is responsible for ensuring base Jenkins configuration, like Jenkins Master pod, plugins, hardening, etc.
+**Base** reconciliation phase is responsible for ensuring base Jenkins configuration, like Jenkins Master Pod, plugins, hardening, etc.
 
 **User** reconciliation phase is responsible for ensuring user-provided configuration, like custom Groovy scripts of Configuration as Code plugin files.
 
