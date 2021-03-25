@@ -5,13 +5,13 @@
    "footer":"footer.md",
    "tutorials":[
       {
-         "description":" Learn how to verify Jenkins Operator Installation",
+         "description":"Learn how to verify Jenkins Operator Installation",
          "duration":"5 min",
          "tutorial_name":"operator-installation-verification-tutorial.md",
          "title":"1. Jenkins Operator Installation Verification"
       },
       {
-         "description":" Learn how to create Jenkins Instance",
+         "description":"Learn how to create Jenkins Instance",
          "duration":"5 min",
          "tutorial_name":"jenkins-instance-creation-tutorial.md",
          "title":"2. Jenkins Instance Creation"
