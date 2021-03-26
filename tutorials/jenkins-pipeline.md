@@ -9,8 +9,6 @@ description: This tutorial explains how to create Jenkins pipelines.
 * A plugin represents multiple Jenkins jobs as one whole workflow in the form of a pipeline.
 * A continuous delivery pipeline refers to an automated expression of a process for getting software from version control up to the users and customers.
 
-Over the years, there have been multiple Jenkins pipeline releases including, Jenkins Build flow, Jenkins Build Pipeline plugin, Jenkins Workflow, etc.
-
 **key features of Pipelines**
 
 * A pipeline is a Jenkin job enabled by the Pipeline plugin and created with text scripts using pipeline DSL based on the Groovy programming language.
@@ -60,10 +58,9 @@ A Jenkins pipeline supports two syntaxes which support continuous delivery requi
 
 ![](_images/pipeline-option.png)
 
-**Case 1: Scripted Pipeline (Pipeline Script) :**
+**Case 1: Scripted Pipeline (Pipeline Script):**
 
-**Step 1**: Select ‘pipeline script’ and start typing your code. 
-See the example script below
+**Step 1: Select ‘pipeline script’ and start typing your code. (See the example script below)**
 
 ```
 #!/usr/bin/env groovy
@@ -95,27 +92,29 @@ pipeline {
 }
 ```
 
-**Step 2** Click on `Apply` and `Save`. You have successfully created your first Jenkins pipeline.
+**Step 2: Click on `Apply` and `Save`.**
+
+You have now successfully created your first Jenkins Scripted pipeline.
 
 ![](_images/pipeline-save.png)
 
 
 
-**Case 2: Declarative pipeline(Pipeline Script from SCM) :**
+**Case 2: Declarative pipeline (Pipeline Script from SCM):**
 
-**Step 1**:  If you want a declarative pipeline then select ‘pipeline script from SCM’ and choose your SCM. In this demo you will use Git. Enter your repository URL where you have kept your Jenkisfile.
+**Step 1:  If you want a declarative pipeline then select ‘pipeline script from SCM’ and choose your SCM. In this demo you will use Git. Enter your repository URL where you have kept your Jenkisfile.**
 
 ![](_images/pipeline.png)
 
-**Step 2:**Select the Branch. Within the script path is the name of the `Jenkinsfile` that is going to be accessed from your SCM to run.
+**Step 2: Select the Branch. Within the script path is the name of the `Jenkinsfile` that is going to be accessed from your SCM to run.**
 
 ![](_images/scm.png)
 
-**Step 3:** Click on `Apply` and `Save`. You have successfully created your first Jenkins pipeline.
+**Step 3: Click on `Apply` and `Save`. You have successfully created your first Jenkins pipeline.**
 
-### Build Pipeline
+### Build Your Jenkins Pipeline
 
-Click on `Build Now` 
+**Step 1: Click on `Build Now`** 
 
 ![](_images/build-now.png)
 
@@ -123,7 +122,7 @@ You will see a stage view:
 
 ![](_images/stage-viiew.png)
 
-Click on particular build like `#1` or `#2` and chose `Console Output` to see the Output.
+**Step 2: Click on particular build like `#1` or `#2` and chose `Console Output` to see the Output.**
 
 ![](_images/console-output.png)
 

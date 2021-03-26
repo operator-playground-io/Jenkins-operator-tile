@@ -33,7 +33,7 @@ The Jenkins Operator design incorporates the following concepts:
 
 ![](_images/jenkins-workflow.png)
 
-**Base** reconciliation phase is responsible for ensuring base Jenkins configuration, like Jenkins Master pod, plugins, hardening, etc.
+**Base** reconciliation phase is responsible for ensuring base Jenkins configuration, like Jenkins Master Pod, plugins, hardening, etc.
 
 **User** reconciliation phase is responsible for ensuring user-provided configuration, like custom Groovy scripts of Configuration as Code plugin files.
 
@@ -46,7 +46,7 @@ For more details please take a look at [Architecture and Design](https://jenkins
 In this tutorial,we are going to cover following topics:
 
 1. Install Jenkins Operator and verify its successful installation.
-2. Create Jenkins Instance and verify status of pods and services.
+2. Create Jenkins Instance and verify status of Pods and services.
 3. Manually Update Plugins.
 4. Access Jenkins Dashboard and create Jenkins Pipeline.
 5. Cleanup Operator.
